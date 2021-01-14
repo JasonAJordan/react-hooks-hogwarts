@@ -14,26 +14,26 @@ import truffle_shuffle from "../assets/truffle_shuffle.jpg";
 
 
 const pigsImagesObj ={
-    augustus_gloop: augustus_gloop,
-    babe: babe, 
-    bailey: bailey,
-    cherub: cherub,
-    galaxy_note: galaxy_note,
-    leggo_my_eggo: leggo_my_eggo,
-    peppa: peppa,
-    piggy_smalls: piggy_smalls,
-    piglet: piglet,
-    porkchop: porkchop,
-    trouble: trouble,
-    truffle_shuffle: truffle_shuffle
+    "Augustus Gloop": augustus_gloop,
+    "Babe": babe, 
+    "Bailey": bailey,
+    "Cherub": cherub,
+    "Galaxy Note": galaxy_note,
+    "Leggo my eggo": leggo_my_eggo,
+    "Peppa": peppa,
+    "Piggy Smalls": piggy_smalls,
+    "Piglet": piglet,
+    "Porkchop": porkchop,
+    "Trouble": trouble,
+    "Truffle Shuffle": truffle_shuffle
 }
 
 //Specialty: {specialty} Is greased: {greased} Weight: {weight}
 
 function Pig({name, specialty, greased, weight, medal, onRemovePig}){
 
-    const imageName = name.split(" ").join("_").toLowerCase();
-    const pigImg = pigsImagesObj[imageName]
+    //const imageName = name.split(" ").join("_").toLowerCase();
+    const pigImg = pigsImagesObj[name]
     const [showDetails, changeShowDetail] = useState(false)
 
 
